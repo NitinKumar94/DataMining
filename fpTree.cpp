@@ -36,11 +36,11 @@ typedef struct _label
 }label;
 
 //Function declarations
-void insert_node(int *,label *,int);
-void initialize_attributes(label *,int);
-void initialize_tree_head();
-void bubblesort(label *,int);
-void FP_traversal(node *);
+void insert_node(int *,label *,int);	//inserts a node into the FP Tree
+void initialize_attributes(label *,int); //initializes the sorted attribute list
+void initialize_tree_head();	//initialize the FP-Tree head	
+void bubblesort(label *,int);	//bubblesorts the attribute list
+void FP_traversal(node *);	//traverses the FP Tree in post order format
 
 node *tree_head=NULL;	//head of the FP-Tree
 
